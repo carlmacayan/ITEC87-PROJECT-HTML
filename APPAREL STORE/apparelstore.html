@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPAREL STORE</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container mt-5">
+
+        <div class="store_landingpage"></div>
+
+        <div class="STORE mb-5">
+            <div class="categories">
+                <h3 class="categ">T-Shirt ITEM</h3>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item1">
+                        <div class="card-body">
+                            <h5 class="card-title">Word War Shirt</h5>
+                            <img src="WORD_WAR.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 600.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item1')">-</button>
+                                <span id="quantity1" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item1')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item2">
+                        <div class="card-body">
+                            <h5 class="card-title">Protect Your Peace</h5>
+                            <img src="PROTECT_your_PEACE.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 600.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item2')">-</button>
+                                <span id="quantity2" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item2')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item3">
+                        <div class="card-body">
+                            <h5 class="card-title">Young & Reckless</h5>
+                            <img src="YOUNG_RECKLESS.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 600.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item3')">-</button>
+                                <span id="quantity3" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item3')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item4">
+                        <div class="card-body">
+                            <h5 class="card-title">Truth Lies Within</h5>
+                            <img src="TRUTH_LIES_WITHIN.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 600.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item4')">-</button>
+                                <span id="quantity4" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item4')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="STORE mb-5">
+            <div class="categories">
+                <h3 class="categ">JEANS ITEM</h3>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item5">
+                        <div class="card-body">
+                            <h5 class="card-title">Carhartt Texas Mens</h5>
+                            <img src="TEXAS_PANTS_JEANS.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 2,000.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item5')">-</button>
+                                <span id="quantity5" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item5')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item6">
+                        <div class="card-body">
+                            <h5 class="card-title">Carhartt Denim Mens</h5>
+                            <img src="LINED_ FIT_DENIM.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 2,000.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item6')">-</button>
+                                <span id="quantity6" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item6')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item7">
+                        <div class="card-body">
+                            <h5 class="card-title">Dickies Bootcut Womens</h5>
+                            <img src="BOOTCUT_JEANS_WOMEN'S.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 2,000.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item7')">-</button>
+                                <span id="quantity7" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item7')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item8">
+                        <div class="card-body">
+                            <h5 class="card-title">Dickies Girl Junior</h5>
+                            <img src="GIRLS_JUNIORS_FIT.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 2,000.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item8')">-</button>
+                                <span id="quantity8" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item8')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="STORE mb-5">
+            <div class="categories">
+                <h3 class="categ">Perfume ITEM</h3>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item9">
+                        <div class="card-body">
+                            <h5 class="card-title">Sauvage Dior</h5>
+                            <img src="SAUVAGE_DIOR.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 3,000.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item9')">-</button>
+                                <span id="quantity9" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item9')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item10">
+                        <div class="card-body">
+                            <h5 class="card-title">Versace Eros</h5>
+                            <img src="VERSACE_EROS.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 3,000.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item10')">-</button>
+                                <span id="quantity10" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item10')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item11">
+                        <div class="card-body">
+                            <h5 class="card-title">Polo Double Black</h5>
+                            <img src="POLO_D'BLACK.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 3,000.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item11')">-</button>
+                                <span id="quantity11" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item11')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="STORE mb-5">
+            <div class="categories">
+                <h3 class="categ">Sando ITEM</h3>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item12">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Dri-Fit</h5>
+                            <img src="NIKE_DRI-FIT.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 1,500.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item12')">-</button>
+                                <span id="quantity12" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item12')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item13">
+                        <div class="card-body">
+                            <h5 class="card-title">Adidas Dri-Fit</h5>
+                            <img src="ADIDAS_DRI-FIT.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 1,500.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item13')">-</button>
+                                <span id="quantity13" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item13')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="STORE mb-5">
+            <div class="categories">
+                <h3 class="categ">Toys ITEM</h3>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item14">
+                        <div class="card-body">
+                            <h5 class="card-title">Gundam</h5>
+                            <img src="GUNDAM.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 2,500.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item14')">-</button>
+                                <span id="quantity14" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item14')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item15">
+                        <div class="card-body">
+                            <h5 class="card-title">Lego</h5>
+                            <img src="LEGO.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 2,500.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item15')">-</button>
+                                <span id="quantity15" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item15')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card" id="item16">
+                        <div class="card-body">
+                            <h5 class="card-title">We Bare Bears</h5>
+                            <img src="WBB_TOYS.JPG" class="card-img-top" alt="">
+                            <p class="card-text">₱ 2,000.00</p>
+                            <div class="quantity d-flex justify-content-center">
+                                <button class="btn btn-secondary btn-sm" onclick="deductItem('item16')">-</button>
+                                <span id="quantity16" class="mx-2">0</span>
+                                <button class="btn btn-secondary btn-sm" onclick="addItem('item16')">+</button>
+                            </div>
+
+                            <div id="discountOptions" class="mt-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="discount" value="none" checked>
+                                    <label class="form-check-label">None</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="discount" value="senior">
+                                    <label class="form-check-label">Senior (20%)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="discount" value="student">
+                                    <label class="form-check-label">Student (10%)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="discount" value="pwd">
+                                    <label class="form-check-label">PWD (30%)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="totalPrice" class="h5">Total Price: ₱ 0.00</div>
+
+    </div>
+
+    <script>
+        let cart = {};
+
+        function deductItem(itemId) {
+            var quantityElement = document.getElementById('quantity' + itemId.substring(4));
+            var quantity = parseInt(quantityElement.textContent);
+            if (quantity > 0) {
+                quantity--;
+                quantityElement.textContent = quantity;
+
+                cart[itemId] = cart[itemId] || { quantity: 0, price: getItemPrice(itemId) };
+                cart[itemId].quantity = quantity;
+
+                calculateTotal();
+            }
+        }
+
+        function addItem(itemId) {
+            var quantityElement = document.getElementById('quantity' + itemId.substring(4));
+            var quantity = parseInt(quantityElement.textContent);
+            quantity++;
+            quantityElement.textContent = quantity;
+
+            cart[itemId] = cart[itemId] || { quantity: 0, price: getItemPrice(itemId) };
+            cart[itemId].quantity = quantity;
+
+            calculateTotal();
+        }
+
+        function getItemPrice(itemId) {
+            var priceElement = document.querySelector('#' + itemId + ' .card-text');
+            return parseFloat(priceElement.textContent.replace('₱', '').replace(',', ''));
+        }
+
+        function applyDiscount() {
+            var discount = 0;
+            var discountType = document.querySelector('input[name="discount"]:checked').value;
+
+            switch (discountType) {
+                case 'senior':
+                    discount = 0.20;
+                    break;
+                case 'student':
+                    discount = 0.10;
+                    break;
+                case 'pwd':
+                    discount = 0.30;
+                    break;
+                default:
+                    discount = 0;
+                    break;
+            }
+
+            return discount;
+        }
+
+        function calculateTotal() {
+            var total = 0;
+            for (var itemId in cart) {
+                total += cart[itemId].quantity * cart[itemId].price;
+            }
+
+            var discount = applyDiscount();
+            var discountedTotal = total * (1 - discount);
+
+            document.getElementById('totalPrice').textContent = 'Total Price: ₱ ' + discountedTotal.toFixed(2);
+        }
+
+        var radioButtons = document.querySelectorAll('input[name="discount"]');
+        radioButtons.forEach(function(radioButton) {
+            radioButton.addEventListener('click', function() {
+                calculateTotal(); 
+            });
+        });
+    </script>
+</body>
+</html>

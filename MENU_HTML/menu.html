@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT Menu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('backg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white; /* Optional: Make text white for better contrast */
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.8); /* Optional: Add a dark background for better readability */
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.8); /* Optional: Light background for cards */
+            color: black; /* Ensure text is black on the card */
+        }
+
+        .btn-primary {
+            background-color: rgba(255, 255, 255, 0.8); 
+            color: black; 
+            border: none; /* Remove default border */
+        }
+
+        .btn-primary:hover {
+            background-color: rgba(255, 255, 255, 1); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+
+        <div class="text-center mb-4">
+            <button class="btn btn-primary mx-1" onclick="showCategory('MAIN_DISH')">Main Dish</button>
+            <button class="btn btn-primary mx-1" onclick="showCategory('VEGETABLES')">Vegetables</button>
+            <button class="btn btn-primary mx-1" onclick="showCategory('DESSERT')">Dessert</button>
+            <button class="btn btn-primary mx-1" onclick="showCategory('DRINKS')">Drinks</button>
+            <button class="btn btn-primary mx-1" onclick="showCategory('ADD_ONS')">Add Ons</button>
+        </div>
+
+        <div class="text-center mb-5">
+            <h1 class="display-4">DOUGH PIZZA & RESTAURANT</h1>
+        </div>
+
+        <div class="menu_dish">
+            <div class="categories">
+                <h3 class="categ">MAIN DISH</h3>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="chicken adobo.jpg" class="card-img-top" alt="Chicken adobo">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken adobo w/rice</h5>
+                            <p class="card-text">₱ 100.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Pork Adobo wrice.jpg" class="card-img-top" alt="Pork adobo">
+                        <div class="card-body">
+                            <h5 class="card-title">Pork adobo w/rice</h5>
+                            <p class="card-text">₱ 120.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Sinigang na hipon rice.jpg" class="card-img-top" alt="Sinigang na hipon">
+                        <div class="card-body">
+                            <h5 class="card-title">Sinigang na hipon w/rice</h5>
+                            <p class="card-text">₱ 130.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Sizzling Kalderetang Kambing wrice.jpg" class="card-img-top" alt="Sizzling Kalderetang Kambing">
+                        <div class="card-body">
+                            <h5 class="card-title">Sizzling Kalderetang Kambing w/rice</h5>
+                            <p class="card-text">₱ 120.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="chicken adobo.jpg" class="card-img-top" alt="Chicken adobo">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken adobo w/rice</h5>
+                            <p class="card-text">₱ 140.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vegetables Section -->
+        <div class="menu_dish">
+            <div class="categories">
+                <h3 class="categ">VEGETABLES</h3>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Ginataang Gulay.jpg" class="card-img-top" alt="Ginataang Gulay">
+                        <div class="card-body">
+                            <h5 class="card-title">Ginataang Gulay</h5>
+                            <p class="card-text">₱ 100.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Pinakbet.jpg" class="card-img-top" alt="Pinakbet">
+                        <div class="card-body">
+                            <h5 class="card-title">Pinakbet</h5>
+                            <p class="card-text">₱ 120.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Chop Suey.jpg" class="card-img-top" alt="Chop Suey">
+                        <div class="card-body">
+                            <h5 class="card-title">Chop Suey</h5>
+                            <p class="card-text">₱ 130.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dessert Section -->
+        <div class="menu_dish">
+            <div class="categories">
+                <h3 class="categ">DESSERT</h3>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Ube Halaya.jpg" class="card-img-top" alt="Ube Halaya">
+                        <div class="card-body">
+                            <h5 class="card-title">Ube Halaya</h5>
+                            <p class="card-text">₱ 100.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Buko Pandan.jpg" class="card-img-top" alt="Buko Pandan">
+                        <div class="card-body">
+                            <h5 class="card-title">Buko Pandan</h5>
+                            <p class="card-text">₱ 120.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Sinigang na hipon rice.jpg" class="card-img-top" alt="Halo-Halo">
+                        <div class="card-body">
+                            <h5 class="card-title">Halo-Halo</h5>
+                            <p class="card-text">₱ 130.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drinks Section -->
+        <div class="menu_dish">
+            <div class="categories">
+                <h3 class="categ">DRINKS</h3>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Iced Tea.jpg" class="card-img-top" alt="Ice Tea">
+                        <div class="card-body">
+                            <h5 class="card-title">Ice Tea</h5>
+                            <p class="card-text">₱ 100.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="gulaman.jpg" class="card-img-top" alt="Fresh Gulaman">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh Gulaman</h5>
+                            <p class="card-text">₱ 120.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Pineapple Juice.jpg" class="card-img-top" alt="Pineapple Juice">
+                        <div class="card-body">
+                            <h5 class="card-title">Pineapple Juice</h5>
+                            <p class="card-text">₱ 130.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Ons Section -->
+        <div class="menu_dish">
+            <div class="categories">
+                <h3 class="categ">ADD ONS</h3>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Pepperoni Pizza.jpg" class="card-img-top" alt="Pepperoni Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Pepperoni Pizza</h5>
+                            <p class="card-text">₱ 100.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Caremelized Onion & Black Olive Pizz.jpg" class="card-img-top" alt="Caramelized Onion & Black Olive Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Caramelized Onion & Black Olive Pizza</h5>
+                            <p class="card-text">₱ 120.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Sourdough Pizza.jpg" class="card-img-top" alt="Sourdough Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Sourdough Pizza</h5>
+                            <p class="card-text">₱ 130.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showCategory(category) {
+            // Add JavaScript to show the corresponding category
+        }
+    </script>
+</body>
+</html>
